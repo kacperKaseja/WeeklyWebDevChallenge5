@@ -1,5 +1,5 @@
 .header {
-    height: 60px;
+    min-height: 60px;
     width: 100%;
     background: #181818;
     display: flex;
@@ -7,6 +7,8 @@
     align-items: center;
     padding: 0 20px;
     font-size: 2rem;
+    flex-wrap: wrap;
+    position: relative;
 
     &__logo {
         color: white;
@@ -32,20 +34,66 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            transition: .5s;
 
             &:nth-child(2) {
                 transform: translate(-50%, -10px);
             }
 
             &:nth-child(3) {
-                transform: translate(-50%, 10px);
+                transform: translate(-50%, 8px);
             }
+
         }
 
+        &.open {
+            .hamburger__inner {
+
+                &:nth-child(1) {
+                    opacity: 0;
+                }
+
+                &:nth-child(2) {
+                    transform: translateX(-15px) rotate(-45deg);
+                }
+
+                &:nth-child(3) {
+                    transform: translateX(-15px) rotate(45deg);
+                }
+
+            }
+
+        }
 
     }
 
     &__menu {
         display: none;
+        opacity: 0;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+        transition: .5s;
+
+        &.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .menu-list__item {
+            margin: 30px 0;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: black;
+            }
+        }
     }
 }
