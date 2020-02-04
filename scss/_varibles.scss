@@ -1,0 +1,16 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button {
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    background: #EA5B58;
+
+}
