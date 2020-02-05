@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.45);
+    height: 90vh;
 
     &__container {
         @include flex-center;
@@ -30,6 +31,5 @@
     &__image {
         display: none;
     }
-
 
 }
