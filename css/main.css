@@ -212,10 +212,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 130px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 130px 0 80px 0;
   height: 270px;
 }
 
@@ -243,6 +242,62 @@ body {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .landing-page {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    min-height: 900px;
+  }
+  .landing-page__image {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-page {
+    background: url("/img/img_slider.svg") no-repeat;
+    background-size: 70%;
+    -webkit-box-shadow: inset 0 0 0 1000px rgba(4, 2, 26, 0.918);
+            box-shadow: inset 0 0 0 1000px rgba(4, 2, 26, 0.918);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .landing-page__container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 20px;
+  }
+  .landing-page__heading {
+    font-size: 3.4rem;
+  }
+  .landing-page__paragrap {
+    font-size: 2.2rem;
+  }
+  .landing-page__image {
+    width: 50%;
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .landing-page__heading {
+    font-size: 4.2rem;
+  }
+}
+
 .service {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,6 +313,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
+  margin-top: 70px;
 }
 
 .service__heading {
@@ -305,6 +361,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 30px 0;
+  max-width: 300px;
 }
 
 .service__container .service__item-title {
@@ -325,5 +382,22 @@ body {
   font-size: 24px;
   background: #EA5B58;
   margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .service__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 30px;
+  }
+  .service__container .service__item {
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

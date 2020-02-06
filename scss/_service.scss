@@ -3,6 +3,9 @@
     flex-direction: column;
     color: white;
 
+    margin-top: 70px;
+    ;
+
     &__heading {
         font-size: 3.6rem;
         margin: 20px 0;
@@ -25,6 +28,7 @@
             @include flex-center;
             flex-direction: column;
             margin: 30px 0;
+            max-width: 300px;
 
             &-title {
                 margin: 10px 0;
@@ -42,4 +46,19 @@
         }
     }
 
+}
+
+@media(min-width:768px) {
+    .service {
+        &__container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+
+            .service__item {
+                width: 40%;
+            }
+        }
+    }
 }
