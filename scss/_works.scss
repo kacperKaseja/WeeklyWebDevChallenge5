@@ -1,0 +1,17 @@
+.works {
+    background: url('/img/iStock-911463836-1920x1080.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    @include flex-center;
+
+    @include title-subtitle;
+
+    &__heading {
+        text-shadow: 2px 2px 2px black;
+    }
+
+    &__subtitle {
+        text-shadow: 2px 2px 2px black;
+    }
+}

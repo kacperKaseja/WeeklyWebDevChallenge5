@@ -8,6 +8,7 @@
 :root {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
 body {
@@ -33,11 +34,7 @@ body {
   font-size: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
-}
-
-.header__logo {
-  color: white;
+  position: fixed;
 }
 
 .header__logo-span {
@@ -106,6 +103,7 @@ body {
 .header__menu.active {
   display: block;
   opacity: 1;
+  color: black;
 }
 
 .header__menu-list {
@@ -153,7 +151,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    color: white;
   }
   .header .menu-list__item {
     margin: 30px 20px;
@@ -180,7 +177,6 @@ body {
   .header .menu-list__item a {
     display: block;
     font-size: 1.4rem;
-    color: white;
   }
 }
 
@@ -219,13 +215,8 @@ body {
 }
 
 .landing-page__heading {
-  color: white;
   font-size: 3.6rem;
   text-align: center;
-}
-
-.landing-page__paragrap {
-  color: white;
 }
 
 .landing-page__button {
@@ -312,7 +303,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: white;
   margin-top: 70px;
 }
 
@@ -399,5 +389,38 @@ body {
   .service__container .service__item {
     width: 40%;
   }
+}
+
+.works {
+  background: url("/img/iStock-911463836-1920x1080.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works__heading {
+  font-size: 3.6rem;
+  margin: 20px 0;
+}
+
+.works__subtitle {
+  font-size: 2.2rem;
+}
+
+.works__heading {
+  text-shadow: 2px 2px 2px black;
+}
+
+.works__subtitle {
+  text-shadow: 2px 2px 2px black;
 }
 /*# sourceMappingURL=main.css.map */
