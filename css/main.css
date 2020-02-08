@@ -423,4 +423,52 @@ body {
 .works__subtitle {
   text-shadow: 2px 2px 2px black;
 }
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio__heading {
+  font-size: 3.6rem;
+  margin: 20px 0;
+}
+
+.portfolio__subtitle {
+  font-size: 2.2rem;
+}
+
+.portfolio svg {
+  margin: 20px 0;
+}
+
+.portfolio__filter {
+  font-size: 25px;
+}
+
+.portfolio__filter a {
+  color: white;
+  text-decoration: none;
+}
+
+.portfolio__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  max-width: 960px;
+  margin: 40px;
+}
 /*# sourceMappingURL=main.css.map */
