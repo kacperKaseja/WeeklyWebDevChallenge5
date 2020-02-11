@@ -2,16 +2,27 @@
     @include title-subtitle;
     @include flex-center;
     flex-direction: column;
+    background: white;
+    color: black;
 
     svg {
         margin: 20px 0;
+
+        line {
+            fill: black;
+        }
+
+        * {
+            fill: black;
+        }
+
     }
 
     &__filter {
         font-size: 25px;
 
         a {
-            color: white;
+            color: black;
             text-decoration: none;
         }
     }
@@ -20,7 +31,7 @@
         display: grid;
         margin: 50px 0 30px 0;
         width: 90%;
-        max-width: 1400px;
+        max-width: 1250px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 30px;
         justify-content: center;
@@ -29,11 +40,12 @@
             height: 250px;
             max-width: 350px;
             padding: 40px 30px;
-            background-color: gray;
+            background-color: #445C99;
             @include flex-center;
             flex-direction: column;
             justify-content: space-around;
             justify-self: center;
+            color: white;
 
             .grid-item__headings {
                 font-size: 3rem;
@@ -44,5 +56,10 @@
             }
         }
 
+    }
+
+    .expand {
+        text-align: center;
+        font-weight: 900;
     }
 }
