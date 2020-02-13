@@ -1,4 +1,47 @@
 .customers {
     background: white;
     color: black;
+    padding: 30px 0;
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+
+    @include title-subtitle;
+
+    &__subtitle {
+        margin: 10px 0;
+    }
+
+    svg {
+        margin: 20px;
+    }
+
+    &__clients {
+        @include flex-center;
+        flex-direction: column;
+
+        .clients__image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: gray;
+        }
+
+        .clients__comments {
+            .clients__text {
+                span {
+                    font-size: 3rem;
+                    margin-right: 10px;
+                }
+
+                font-size: 2rem;
+            }
+
+            .clients__name {
+                font-size: 3.5rem;
+                font-weight: 900;
+            }
+        }
+
+    }
 }

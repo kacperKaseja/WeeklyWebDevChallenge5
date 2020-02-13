@@ -526,5 +526,74 @@ body {
 .customers {
   background: white;
   color: black;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.customers__heading {
+  font-size: 3.6rem;
+  margin: 20px 0;
+}
+
+.customers__subtitle {
+  font-size: 2.2rem;
+}
+
+.customers__subtitle {
+  margin: 10px 0;
+}
+
+.customers svg {
+  margin: 20px;
+}
+
+.customers__clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customers__clients .clients__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: gray;
+}
+
+.customers__clients .clients__comments .clients__text {
+  font-size: 2rem;
+}
+
+.customers__clients .clients__comments .clients__text span {
+  font-size: 3rem;
+  margin-right: 10px;
+}
+
+.customers__clients .clients__comments .clients__name {
+  font-size: 3.5rem;
+  font-weight: 900;
 }
 /*# sourceMappingURL=main.css.map */
