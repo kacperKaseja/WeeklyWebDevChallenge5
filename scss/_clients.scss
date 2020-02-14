@@ -24,6 +24,7 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
+            margin: 40px 0;
             background: gray;
         }
 
@@ -38,8 +39,23 @@
             }
 
             .clients__name {
+                display: block;
+                margin: 20px 0 10px 0;
                 font-size: 3.5rem;
                 font-weight: 900;
+            }
+
+            .clients__nav {
+                display: flex;
+                justify-content: center;
+
+                .clients__dots {
+                    margin: 20px 10px;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: gray;
+                }
             }
         }
 

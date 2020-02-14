@@ -254,7 +254,7 @@ body {
 
 @media (min-width: 1024px) {
   .landing-page {
-    background: url("/img/img_slider.svg") no-repeat;
+    background: url("./img/img_slider.svg") no-repeat;
     background-size: 70%;
     -webkit-box-shadow: inset 0 0 0 1000px rgba(4, 2, 26, 0.918);
             box-shadow: inset 0 0 0 1000px rgba(4, 2, 26, 0.918);
@@ -580,6 +580,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin: 40px 0;
   background: gray;
 }
 
@@ -593,7 +594,26 @@ body {
 }
 
 .customers__clients .clients__comments .clients__name {
+  display: block;
+  margin: 20px 0 10px 0;
   font-size: 3.5rem;
   font-weight: 900;
+}
+
+.customers__clients .clients__comments .clients__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.customers__clients .clients__comments .clients__nav .clients__dots {
+  margin: 20px 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: gray;
 }
 /*# sourceMappingURL=main.css.map */
