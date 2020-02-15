@@ -61,3 +61,13 @@
 
     }
 }
+
+@media(min-width:768px) {
+    .customers {
+
+
+        &__clients {
+            flex-direction: row;
+        }
+    }
+}

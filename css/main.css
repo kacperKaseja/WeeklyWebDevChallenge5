@@ -616,4 +616,13 @@ body {
   border-radius: 50%;
   background-color: gray;
 }
+
+@media (min-width: 768px) {
+  .customers__clients {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /*# sourceMappingURL=main.css.map */
