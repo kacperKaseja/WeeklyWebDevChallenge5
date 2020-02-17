@@ -1,0 +1,8 @@
+.get-in-touch {
+    height: 400px;
+    display: flex;
+    @include flex-center;
+    text-align: center;
+    flex-direction: column;
+    @include title-subtitle;
+}
