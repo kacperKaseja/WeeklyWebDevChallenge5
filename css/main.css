@@ -35,6 +35,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: fixed;
+  z-index: 1;
 }
 
 .header__logo-span {
@@ -694,5 +695,108 @@ body {
 .map {
   height: 400px;
   width: 100%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__heading {
+  font-size: 3.6rem;
+  margin: 20px 0;
+}
+
+.contact__subtitle {
+  font-size: 2.2rem;
+}
+
+.contact svg {
+  margin: 20px 0;
+}
+
+.contact .contact__time {
+  margin: 20px 20px;
+}
+
+.contact .contact__time .first,
+.contact .contact__time .second {
+  font-size: 1.8rem;
+}
+
+.contact .contact__time .second {
+  margin: 10px 0 0 20px;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 90%;
+  margin: 10px 0;
+  padding: 20px 10px;
+  font-size: 20px;
+  border-radius: 8px;
+  font-family: 'Open Sans';
+}
+
+.contact form button {
+  width: 90%;
+  margin: 10px;
+  padding: 20px;
+  font-size: 2.5rem;
+  background: #EA5B58;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact a {
+  margin: 30px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #C2C2C2;
+}
+
+.contact a svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */
