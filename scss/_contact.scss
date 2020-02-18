@@ -31,6 +31,7 @@
             margin: 10px 0;
             padding: 20px 10px;
             font-size: 20px;
+            border: none;
             border-radius: 8px;
             font-family: 'Open Sans';
         }
@@ -59,6 +60,61 @@
 
         svg {
             transform: rotate(180deg);
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .contact {
+        .contact__time {
+
+            .first,
+            .second {
+                font-size: 2.5rem;
+            }
+        }
+
+        form {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            input {
+                flex: 0 1 45%;
+            }
+
+            textarea {
+                height: 200px;
+                flex: 0 1 100%;
+            }
+
+            button {
+                flex: 0 1 300px;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        h2,
+        p.contact__subtitle,
+        svg {
+            flex: 1 0 100%;
+            text-align: center;
+        }
+
+        .contact__time {
+            flex: 0 1 45%;
+            height: 200px;
+        }
+
+        form {
+            flex: 0 1 45%;
         }
     }
 }
