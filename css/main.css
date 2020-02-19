@@ -711,6 +711,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .contact__heading {
@@ -769,7 +770,7 @@ body {
 
 .contact form button {
   width: 90%;
-  margin: 10px;
+  margin: 10px 0;
   padding: 20px;
   font-size: 2.5rem;
   background: #EA5B58;
@@ -794,6 +795,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #C2C2C2;
+}
+
+@media (min-width: 1024px) {
+  .contact a {
+    position: absolute;
+    bottom: -40px;
+    right: -25px;
+  }
 }
 
 .contact a svg {
@@ -837,6 +846,8 @@ body {
 
 @media (min-width: 1024px) {
   .contact {
+    margin: 20px auto;
+    max-width: 1300px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -846,6 +857,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-bottom: 60px;
   }
   .contact h2,
   .contact p.contact__subtitle,
