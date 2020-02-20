@@ -1,4 +1,19 @@
 .footer {
-
     background: rgba(0, 0, 0, 0.6);
+    @include flex-center;
+    flex-direction: column;
+    padding: 20px 0;
+
+    &__copyrights {
+        margin: 10px;
+        font-size: 1.8rem;
+    }
+
+    &__logo {
+        font-size: 2.5rem;
+
+        span {
+            font-weight: 700;
+        }
+    }
 }
