@@ -35,3 +35,17 @@ function initMap() {
         map: map
     });
 }
+
+const scrollToTopBtn = document.querySelector('.contact__back-to-top');
+
+function scrollTop(e) {
+    e.preventDefault();
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+    })
+}
+
+
+scrollToTopBtn.addEventListener('click', scrollTop);
