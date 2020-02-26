@@ -15,6 +15,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => anchor.addEventListe
         behavior: "smooth",
         block: 'start'
     });
+    menuMobile.classList.toggle('active');
+    hamburger.classList.toggle('open');
 }));
 
 function initMap() {
